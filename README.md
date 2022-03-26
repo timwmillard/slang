@@ -6,7 +6,7 @@ Command line tool to help keep up with the hipsters.
 
 If you already have the Go compiler installed.
 ```sh
-go install github.com/timwmillard/slang
+go install github.com/timwmillard/slang@latest
 ```
 
 If you don't have Go, you might not be cool enough to use `slang`. But you can always try.  Install [Go](https://go.dev/) first.
