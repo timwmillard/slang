@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	BaseURL = "https://mashape-community-urban-dictionary.p.rapidapi.com"
+	DefaultBaseURL = "https://mashape-community-urban-dictionary.p.rapidapi.com"
 )
 
 type Definition struct {
@@ -34,7 +34,7 @@ type Client struct {
 }
 
 func NewClient(apiKey string) *Client {
-	base, err := url.Parse(BaseURL)
+	base, err := url.Parse(DefaultBaseURL)
 	if err != nil {
 		panic(err)
 	}
